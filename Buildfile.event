@@ -1,0 +1,18 @@
+#include "Extensions/Hack Installation.txt"
+
+#define FreeSpace $B2A610
+ORG FreeSpace
+
+	#include "SaveData/ExModularSave.event"
+
+	ALIGN 4
+	#include "cFreeMU/FreeMovement.event"
+
+	#define TRAP_REWORK
+	#define HEAL_TILES
+	#define DRAGON_VEINS
+	ALIGN 4
+	#include "TrapRework/TrapRework.event"
+
+	ALIGN 4
+	#include MyPrologue.event
